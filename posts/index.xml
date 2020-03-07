@@ -1,36 +1,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts - 周翔辉的博客</title>
-    <link>https://fankaljead.github.io/posts/</link>
+    <link>http://fankaljead.top/posts/</link>
     <description>Recent content in Posts on 周翔辉的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 07 Mar 2020 17:07:42 +0800</lastBuildDate>
     
-        <atom:link href="https://fankaljead.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://fankaljead.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>使用Hugo搭建个人博客</title>
-      <link>https://fankaljead.github.io/posts/linux/hugo-install/</link>
+      <link>http://fankaljead.top/posts/linux/hugo-install/</link>
       <pubDate>Sat, 07 Mar 2020 17:07:42 +0800</pubDate>
       
-      <guid>https://fankaljead.github.io/posts/linux/hugo-install/</guid>
+      <guid>http://fankaljead.top/posts/linux/hugo-install/</guid>
       <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。 下面介绍一下使用 Hugo 来搭建Github个人博客的过程。
 Install Hugo 安装 Hugo  使用包管理器安装  ＃ ArchLinux $ sudo pacman -S hugo  使用源码安装  $ mkdir $HOME/src $ cd $HOME/src $ git clone https://github.com/gohugoio/hugo.git $ cd hugo $ go install 使用 Hugo 生成站点 使用Hugo快速生成站点，比如希望生成到 /home/zxh/blog 路径：
 $ hugo new site /home/zxh/blog 创建文章 例如想要生成一篇1个 about 页面
 $ hugo new about.md </description>
     </item><item>
       <title>Index</title>
-      <link>https://fankaljead.github.io/posts/linux/install-latex/</link>
+      <link>http://fankaljead.top/posts/linux/install-latex/</link>
       <pubDate>Sat, 07 Mar 2020 16:57:30 +0800</pubDate>
       
-      <guid>https://fankaljead.github.io/posts/linux/install-latex/</guid>
+      <guid>http://fankaljead.top/posts/linux/install-latex/</guid>
       <description>LaTeX Installation</description>
     </item><item>
       <title>Hello World</title>
-      <link>https://fankaljead.github.io/posts/linux/hello-world/</link>
+      <link>http://fankaljead.top/posts/linux/hello-world/</link>
       <pubDate>Sat, 07 Mar 2020 11:26:58 +0800</pubDate>
       
-      <guid>https://fankaljead.github.io/posts/linux/hello-world/</guid>
+      <guid>http://fankaljead.top/posts/linux/hello-world/</guid>
       <description>Hello World form Hugo</description>
     </item>
   </channel>
