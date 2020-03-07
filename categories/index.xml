@@ -1,26 +1,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories - 周翔辉的博客</title>
-    <link>http://fankaljead.top/categories/</link>
+    <link>https://fankaljead.github.io/categories/</link>
     <description>Recent content in Categories on 周翔辉的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 07 Mar 2020 17:07:42 +0800</lastBuildDate>
     
-        <atom:link href="http://fankaljead.top/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://fankaljead.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Linux</title>
-      <link>http://fankaljead.top/categories/linux/</link>
+      <link>https://fankaljead.github.io/categories/linux/</link>
       <pubDate>Sat, 07 Mar 2020 17:07:42 +0800</pubDate>
       
-      <guid>http://fankaljead.top/categories/linux/</guid>
+      <guid>https://fankaljead.github.io/categories/linux/</guid>
       <description></description>
     </item><item>
       <title>Web</title>
-      <link>http://fankaljead.top/categories/web/</link>
+      <link>https://fankaljead.github.io/categories/web/</link>
       <pubDate>Sat, 07 Mar 2020 11:26:58 +0800</pubDate>
       
-      <guid>http://fankaljead.top/categories/web/</guid>
+      <guid>https://fankaljead.github.io/categories/web/</guid>
       <description></description>
     </item>
   </channel>
