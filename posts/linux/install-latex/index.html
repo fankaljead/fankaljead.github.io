@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Index &middot; 周翔辉的时光驿站</title>
-  <meta name="description" content="LaTeX Installation" />
+  <title>在 Manjaro 上安装 LaTeX &middot; 周翔辉的时光驿站</title>
+  <meta name="description" content="使用 texlive.iso 在 Manjaro Linux 上安装 LaTeX，并配置 spacemacs" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -34,6 +34,8 @@
       <li><a href="https://fankaljead.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
       <li><a href="https://fankaljead.github.io/about/" class="hamburger-menu-overlay-link">About Me</a></li>
       
+      <li><a href="https://fankaljead.github.io/categories/latex/" class="hamburger-menu-overlay-link">LaTeX</a></li>
+      
       <li><a href="https://fankaljead.github.io/categories/linux/" class="hamburger-menu-overlay-link">Linux</a></li>
       
       <li><a href="https://fankaljead.github.io/categories/web/" class="hamburger-menu-overlay-link">Web</a></li>
@@ -46,18 +48,108 @@
     <main class="content side-text-padding">
       <article class="post dropcase">
         <header class="post-header">
-          <h1 class="post-title">Index</h1>
+          <h1 class="post-title">在 Manjaro 上安装 LaTeX</h1>
           <p class="post-date">Posted <time datetime="2020-03-07">Mar 7, 2020</time></p>
         </header>
         <picture class="post-figure">
           
           
           <source srcset="https://fankaljead.github.io/posts/linux/install-latex/latex_hu80d65d06b0deb9667db6508868602914_237530_800x0_resize_lanczos_2.png">
-          <img src="https://fankaljead.github.io/posts/linux/install-latex/latex_hu80d65d06b0deb9667db6508868602914_237530_800x0_resize_lanczos_2.png" >
+          <img src="https://fankaljead.github.io/posts/linux/install-latex/latex_hu80d65d06b0deb9667db6508868602914_237530_800x0_resize_lanczos_2.png" alt="latex install record">
         </picture>
         <h2>Contents</h2>
-          <nav id="TableOfContents"></nav>
-        <p>在 ArchLinux 上安装 LaTeX</p>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#下载-texliveiso">下载 texlive.iso</a></li>
+    <li><a href="#安装-texlive">安装 texlive</a></li>
+    <li><a href="#配置-spacemacs">配置 spacemacs</a></li>
+    <li><a href="#相关链接">相关链接</a></li>
+  </ul>
+</nav>
+        <h1 id="前言">前言</h1>
+<p><strong>LaTeX</strong>（/ˈlɑːtɛx/，常被读作/ˈlɑːtɛk/或/ˈleɪtɛk/，写作“LaTeX”），是一种基于<a href="https://zh.wikipedia.org/wiki/TeX">TeX</a>的<a href="https://zh.wikipedia.org/wiki/%E6%8E%92%E7%89%88">排版</a>系统，由<a href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9B%BD">美国</a><a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6">计算机科学</a>家<a href="https://zh.wikipedia.org/wiki/%E8%8E%B1%E6%96%AF%E5%88%A9%C2%B7%E5%85%B0%E4%BC%AF%E7%89%B9">莱斯利·兰伯特</a>在20世纪80年代初期开发，利用这种格式系统的处理，即使用户没有排版和程序设计的知识也可以充分发挥由TeX所提供的强大功能，不必一一亲自去设计或校对，能在几天，甚至几小时内生成很多具有书籍质量的印刷品。对于生成复杂表格和<a href="https://zh.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6">数学</a>公式，这一点表现得尤为突出。因此它非常适用于生成高印刷质量的<a href="https://zh.wikipedia.org/wiki/%E7%A7%91%E6%8A%80">科技</a>和数学、物理文档。这个系统同样适用于生成从简单的信件到完整书籍的所有其他种类的文档。</p>
+<p><img src="https://fankaljead.github.io/home/zxh/Dropbox/blog/content/posts/linux/install-latex/LaTeX_logo.svg" alt="latex logo"></p>
+<hr>
+<h1 id="安装记录">安装记录</h1>
+<h2 id="下载-texliveiso">下载 texlive.iso</h2>
+<p>这里选择的是重庆大学的镜像站点 <a href="https://mirrors.cqu.edu.cn/CTAN/systems/texlive/Images/texlive.iso">texlive.iso</a></p>
+<p>当然也可以选择清华大学的景象站点 <a href="https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/texlive2019-20190410.iso">texlive.iso</a></p>
+<h2 id="安装-texlive">安装 texlive</h2>
+<ul>
+<li>挂载 texlive.iso</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mount texlive.iso /mnt
+$ cd /mnt
+</code></pre></div><ul>
+<li>使用 <code>texlive</code> 提供的 <code>install-tl </code>脚步安装，一路默认</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ./install-tl
+</code></pre></div><ul>
+<li>配置<code>texlive</code>环境变量</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo <span style="color:#e6db74">`</span>export PATH<span style="color:#f92672">=</span>$PATH:/usr/local/texlive/2019/bin/x86_64-linux<span style="color:#e6db74">`</span> &gt;&gt; .xprofile
+</code></pre></div><ul>
+<li>测试安装的 texlive，使用<code>xelatex</code>编译一下 <code>test.tex</code></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#75715e">%% test.tex
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">\documentclass</span>{article}
+<span style="color:#66d9ef">\usepackage</span>{ctex}
+
+<span style="color:#66d9ef">\begin</span>{document}
+你好 <span style="color:#66d9ef">\LaTeX</span>
+<span style="color:#66d9ef">\end</span>{document}
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xelatex test.tex
+<span style="color:#75715e"># 编译过程</span>
+$ ls   
+$ test.aux  test.log  test.pdf  test.tex  x.lo
+$ zathura test.pdf <span style="color:#75715e"># 查看编译成功的 test.pdf</span>
+</code></pre></div><ul>
+<li>编译后的效果图</li>
+</ul>
+<p><img src="https://fankaljead.github.io/home/zxh/Dropbox/blog/content/posts/linux/install-latex/xelatex-test-pdf.png" alt="test.pdf"></p>
+<hr>
+<h2 id="配置-spacemacs">配置 spacemacs</h2>
+<ul>
+<li>
+<p>首先当然是安装 emacs啦 <code>sudo pacman -S emacs</code></p>
+</li>
+<li>
+<p>安装 <a href="https://develop.spacemacs.org/">spacamacs</a>，这里使用的是 <code>develop</code>分支</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+$ cd ~/.emacs.d
+$ git checkout develop <span style="color:#75715e"># 切换到 develop 分支</span>
+</code></pre></div></li>
+<li>
+<p>打开 <code>emacs</code> 安装 <code>spacemacs</code> ，这里可能会遇到网络过慢的问题，解决办法就是，先把<code>emacs</code>关闭，然后在<code>~/.spacemacs</code>中加入清华的 <a href="https://mirrors.tuna.tsinghua.edu.cn/help/elpa/">elpa源</a>：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在 (defun dotspacemacs/user-init () 中加入</span>
+(<span style="color:#66d9ef">setq</span> configuration-layer-elpa-archives
+       <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;melpa-cn&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/&#34;</span>)
+        (<span style="color:#e6db74">&#34;org-cn&#34;</span>   <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/org/&#34;</span>)
+        (<span style="color:#e6db74">&#34;gnu-cn&#34;</span>   <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/&#34;</span>)))
+</code></pre></div></li>
+<li>
+<p>配置 <a href="https://develop.spacemacs.org/layers/+lang/latex/README.html">latex layer</a>, 打开 emacs, 按下<code>space f e d</code>，编辑配置文件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在dotspacemacs-configuration-layers中加入</span>
+(latex <span style="color:#e6db74">:variables</span> latex-build-command <span style="color:#e6db74">&#34;XeLaTeX&#34;</span>)
+</code></pre></div><p>然后退出 <code>emacs</code>，并重新打开, 按下<code>space f e d</code>，编辑配置文件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在(defun dotspacemacs/user-config () 中加入</span>
+(add-hook <span style="color:#e6db74">&#39;LaTeX-mode-hook</span>
+            <span style="color:#a6e22e">#&#39;</span>(lambda ()
+                (add-to-list <span style="color:#e6db74">&#39;TeX-command-list</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;XeLaTeX&#34;</span> <span style="color:#e6db74">&#34;%`xelatex --synctex=1%(mode)%&#39; %t&#34;</span> TeX-run-TeX <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">t</span>))))
+  (<span style="color:#66d9ef">setq</span> org-latex-pdf-process <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;xelatex -interaction nonstopmode %f&#34;</span>
+                                <span style="color:#e6db74">&#34;xelatex -interaction nonstopmode %f&#34;</span>))
+</code></pre></div></li>
+<li>
+<p>配置完成，重新打开后测试</p>
+<p><!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>编辑一个 <code>tex</code>文件，按 <code>space m p d</code> 进行在 <code>emacs</code>内的预览，按<code>space m b</code>进行编译输出 <code>pdf</code>文件</p>
+<p><!-- raw HTML omitted --></p>
+</li>
+</ul>
+<hr>
+<h2 id="相关链接">相关链接</h2>
 
       </article>
       

@@ -15,13 +15,6 @@
       
       <guid>https://fankaljead.github.io/posts/linux/hugo-install/</guid>
       <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。下面介绍一下使用 Hugo 来搭建Github个人博客的过程。</description>
-    </item><item>
-      <title>Index</title>
-      <link>https://fankaljead.github.io/posts/linux/install-latex/</link>
-      <pubDate>Sat, 07 Mar 2020 16:57:30 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/linux/install-latex/</guid>
-      <description>LaTeX Installation</description>
     </item>
   </channel>
 </rss>
