@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>learning - 周翔辉的时光驿站</title>
+    <link>https://fankaljead.github.io/categories/learning/</link>
+    <description>Recent content in learning on 周翔辉的时光驿站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 29 Mar 2020 10:33:22 +0800</lastBuildDate>
+    
+        <atom:link href="https://fankaljead.github.io/categories/learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>小鹤双拼的使用</title>
+      <link>https://fankaljead.github.io/posts/learning/%E5%8F%8C%E6%8B%BC/</link>
+      <pubDate>Sun, 29 Mar 2020 10:33:22 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/posts/learning/%E5%8F%8C%E6%8B%BC/</guid>
+      <description>在今天，我明白了，学习小鹤双拼很简单，只需要将 [双拼练习](https://api.ihint.me/shuang/) 这个网站练习10多分钟，就可以入门双拼了。</description>
+    </item>
+  </channel>
+</rss>
