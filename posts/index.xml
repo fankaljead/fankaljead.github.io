@@ -4,11 +4,18 @@
     <link>https://fankaljead.github.io/posts/</link>
     <description>Recent content in Posts on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Apr 2020 08:59:42 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 09:42:16 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>2020年4月3日LAlala</title>
+      <link>https://fankaljead.github.io/posts/life/2020-04-03/</link>
+      <pubDate>Fri, 03 Apr 2020 09:42:16 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/posts/life/2020-04-03/</guid>
+      <description>没有什么可说的</description>
+    </item><item>
       <title>解决linux中tiling manager画面撕裂和死亡bi bi bi的声音</title>
       <link>https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/</link>
       <pubDate>Fri, 03 Apr 2020 08:59:42 +0800</pubDate>
@@ -36,13 +43,6 @@
       
       <guid>https://fankaljead.github.io/posts/linux/hugo-install/</guid>
       <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。下面介绍一下使用 Hugo 来搭建Github个人博客的过程。</description>
-    </item><item>
-      <title>在 Manjaro 上安装 LaTeX</title>
-      <link>https://fankaljead.github.io/posts/linux/install-latex/</link>
-      <pubDate>Sat, 07 Mar 2020 16:57:30 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/linux/install-latex/</guid>
-      <description>使用 texlive.iso 在 Manjaro Linux 上安装 LaTeX，并配置 spacemacs</description>
     </item>
   </channel>
 </rss>

@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://fankaljead.github.io/categories/</loc>
-    <lastmod>2020-04-03T08:59:42+08:00</lastmod>
+    <loc>https://fankaljead.github.io/posts/life/2020-04-03/</loc>
+    <lastmod>2020-04-03T09:42:16+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fankaljead.github.io/categories/linux/</loc>
-    <lastmod>2020-04-03T08:59:42+08:00</lastmod>
+    <loc>https://fankaljead.github.io/categories/</loc>
+    <lastmod>2020-04-03T09:42:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fankaljead.github.io/categories/life/</loc>
+    <lastmod>2020-04-03T09:42:16+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://fankaljead.github.io/posts/</loc>
+    <lastmod>2020-04-03T09:42:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fankaljead.github.io/categories/linux/</loc>
     <lastmod>2020-04-03T08:59:42+08:00</lastmod>
   </url>
   
