@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Web &middot; 周翔辉的时光驿站</title>
-  <meta name="description" content="" />
+  <title>在spacemacs org-mode中插入目录 &middot; 周翔辉的时光驿站</title>
+  <meta name="description" content="org-mode是emacs中极为强大的文档工具，记录一下怎样在org稳定中插入目录" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -14,7 +14,6 @@
   
   
   <link href="https://zhouxianghui.xyz/css/concated.min.css" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" href="https://zhouxianghui.xyz/categories/web/index.xml" title="周翔辉的时光驿站" />
   
 <script type="application/javascript">
 var doNotTrack = false;
@@ -36,7 +35,7 @@ if (!doNotTrack) {
   </style>
 </head>
 
-  <body class="list-body">
+  <body class="single-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="https://zhouxianghui.xyz/" class="nav-text">周翔辉的时光机</a></h1>
   <div class="hamburger-menu">
@@ -65,36 +64,93 @@ if (!doNotTrack) {
   </div>
 </nav>
 
-    <main class="card-container side-gutter">
-      <header class="list-header">
-        <h1 class="list-header-title">Web</h1>
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+          <h1 class="post-title">在spacemacs org-mode中插入目录</h1>
+          <p class="post-date">Posted <time datetime="2020-04-17">Apr 17, 2020</time></p>
+        </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://zhouxianghui.xyz/posts/emacs/2020-04-17/org-mode-table-of-contents_hu3020c9609f46e19ce0fcde5a714a2cdd_30037_800x0_resize_lanczos_2.png">
+          <img src="https://zhouxianghui.xyz/posts/emacs/2020-04-17/org-mode-table-of-contents_hu3020c9609f46e19ce0fcde5a714a2cdd_30037_800x0_resize_lanczos_2.png" >
+        </picture>
         
-      </header>
+        <h2 id="在-org-mode-中插入目录">在 org-mode 中插入目录</h2>
+<p>在org-mode中插入目录是非常简单的一项操作，生成目录后可以点击链接跳转到指定的位置。</p>
+<ol>
+<li>这是插入之前的文档</li>
+</ol>
+<pre><code class="language-Org-mode" data-lang="Org-mode">* org mode stuff                                                    
+** heading 1
+*** subheading 1
+**** subsubheading 1
+** heading 2
+*** subheading 2
+**** subsubheading 2
+</code></pre><ol start="2">
+<li>下面是插入目录后的文档</li>
+</ol>
+<pre><code class="language-Org-mode" data-lang="Org-mode">#+OPTIONS: toc:3          (only include two levels in TOC)
+#+OPTIONS: toc:nil        (no default TOC at all)
+* org mode stuff                                                        :TOC:
+  - [[#heading-1][heading 1]]
+    - [[#subheading-1][subheading 1]]
+      - [[#subsubheading-1][subsubheading 1]]
+  - [[#heading-2][heading 2]]
+    - [[#subheading-2][subheading 2]]
+      - [[#subsubheading-2][subsubheading 2]]
+
+** heading 1
+*** subheading 1
+**** subsubheading 1
+** heading 2
+*** subheading 2
+**** subsubheading 2
+</code></pre><ol start="3">
+<li>Org-mode 在github上面的渲染</li>
+</ol>
+<p><img src="./org-mode-github.png" alt="org-mode-github"></p>
+<ol start="4">
+<li>
+<p>生成目录的方法</p>
+<p>在标题后面添加 <code>:TOC:</code> 标签，然后保存就可以自动生成目录，还可以通过 <code>#+OPTIONS:toc</code> 设置目录生成的级别。</p>
+</li>
+</ol>
+
+      </article>
       
-      
+    </main>
+    <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://zhouxianghui.xyz/posts/linux/hello-world/" class="card blog-card" rel="bookmark" >
+  href="https://zhouxianghui.xyz/posts/life/2020-04-03/" class="card blog-card" rel="bookmark" >
   
   <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
     <picture>
       
-      
-      <source srcset="https://zhouxianghui.xyz/posts/linux/hello-world/background_hub60e09733b7fba24a6428a095583b3e1_92873_400x300_fit_q75_lanczos.jpg">
-      <img src="https://zhouxianghui.xyz/posts/linux/hello-world/background_hub60e09733b7fba24a6428a095583b3e1_92873_400x300_fit_q75_lanczos.jpg" class="card-img" alt="Description for the featured image, used as the alt text">
+      <source srcset="https://zhouxianghui.xyz/posts/life/2020-04-03/bbbb.jpg">
+      <img src="https://zhouxianghui.xyz/posts/life/2020-04-03/bbbb.jpg" class="card-img" >
     </picture>
   </div>
+  
   <article class="card-body">
-    <h2 class="card-title">Hello World</h2>
-    <p class="card-text">Hello World form Hugo</p>
+    <h2 class="card-title">2020年4月3日</h2>
+    <p class="card-text">杨花落尽子规啼</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2020-03-07">Mar 7, 2020</time></p>
-      <p>#Web </p>
+      <p>Posted <time datetime="2020-04-03 43:00">Apr 3, 2020</time></p>
+      <p>#life </p>
     </div>
   </article>
 </a>
-    </main>
-    
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://zhouxianghui.xyz/" class="card home-card" style="background-image: url( https://zhouxianghui.xyz/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
