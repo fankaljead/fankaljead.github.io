@@ -4,17 +4,17 @@
     <link>https://fankaljead.github.io/categories/emacs/</link>
     <description>Recent content in emacs on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 11 Jul 2020 08:47:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 09:15:51 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Writing Hugo blog in Org</title>
-      <link>https://fankaljead.github.io/posts/writing-hugo-blog-in-org-subtree-export/</link>
-      <pubDate>Sat, 11 Jul 2020 08:47:52 +0800</pubDate>
+      <link>https://fankaljead.github.io/posts/ox-hugo/writing-hugo-blog-in-org-subtree-export/</link>
+      <pubDate>Sat, 11 Jul 2020 09:15:51 +0800</pubDate>
       
-      <guid>https://fankaljead.github.io/posts/writing-hugo-blog-in-org-subtree-export/</guid>
-      <description>First heading within the post  This post will be exported as content/posts/writing-hugo-blog-in-org-subtree-export.md. Its title will be &amp;ldquo;Writing Hugo blog in Org&amp;rdquo;. It will have hugo and org tags and emacs as category. The menu item weight and post weight are auto-calculated. The menu item identifier is auto-set. The lastmod property in the front-matter is set automatically to the time of export.  A sub-heading under that heading  It&amp;rsquo;s draft state will be marked as true as the subtree has the todo state set to TODO.</description>
+      <guid>https://fankaljead.github.io/posts/ox-hugo/writing-hugo-blog-in-org-subtree-export/</guid>
+      <description>writing hugo blog in org subtree export</description>
     </item><item>
       <title>在spacemacs org-mode中插入目录</title>
       <link>https://fankaljead.github.io/posts/emacs/2020-04-17/</link>
