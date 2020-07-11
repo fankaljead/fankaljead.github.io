@@ -1,19 +1,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web - 周翔辉的时光驿站</title>
-    <link>https://zhouxianghui.xyz/categories/web/</link>
+    <link>https://fankaljead.github.io/categories/web/</link>
     <description>Recent content in Web on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 07 Mar 2020 11:26:58 +0800</lastBuildDate>
     
-        <atom:link href="https://zhouxianghui.xyz/categories/web/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://fankaljead.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World</title>
-      <link>https://zhouxianghui.xyz/posts/linux/hello-world/</link>
+      <link>https://fankaljead.github.io/posts/linux/hello-world/</link>
       <pubDate>Sat, 07 Mar 2020 11:26:58 +0800</pubDate>
       
-      <guid>https://zhouxianghui.xyz/posts/linux/hello-world/</guid>
+      <guid>https://fankaljead.github.io/posts/linux/hello-world/</guid>
       <description>$$ e^{i}+1=0 $$
 Hello World form Hugo</description>
     </item>
