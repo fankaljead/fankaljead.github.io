@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emacs - 周翔辉的时光驿站</title>
-    <link>https://fankaljead.github.io/categories/emacs/</link>
-    <description>Recent content in emacs on 周翔辉的时光驿站</description>
+    <title>org - 周翔辉的时光驿站</title>
+    <link>https://fankaljead.github.io/tags/org/</link>
+    <description>Recent content in org on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 11 Jul 2020 08:47:52 +0800</lastBuildDate>
     
-        <atom:link href="https://fankaljead.github.io/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://fankaljead.github.io/tags/org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Writing Hugo blog in Org</title>
@@ -15,13 +15,6 @@
       
       <guid>https://fankaljead.github.io/posts/writing-hugo-blog-in-org-subtree-export/</guid>
       <description>First heading within the post  This post will be exported as content/posts/writing-hugo-blog-in-org-subtree-export.md. Its title will be &amp;ldquo;Writing Hugo blog in Org&amp;rdquo;. It will have hugo and org tags and emacs as category. The menu item weight and post weight are auto-calculated. The menu item identifier is auto-set. The lastmod property in the front-matter is set automatically to the time of export.  A sub-heading under that heading  It&amp;rsquo;s draft state will be marked as true as the subtree has the todo state set to TODO.</description>
-    </item><item>
-      <title>在spacemacs org-mode中插入目录</title>
-      <link>https://fankaljead.github.io/posts/emacs/2020-04-17/</link>
-      <pubDate>Fri, 17 Apr 2020 09:10:56 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/emacs/2020-04-17/</guid>
-      <description>org-mode是emacs中极为强大的文档工具，记录一下怎样在org稳定中插入目录</description>
     </item>
   </channel>
 </rss>
