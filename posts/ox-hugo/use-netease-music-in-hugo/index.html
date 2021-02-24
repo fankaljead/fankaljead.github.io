@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Windows &middot; 周翔辉的时光驿站</title>
-  <meta name="description" content="" />
+  <title>TO DO 在 hugo 中插入网易云音乐插件 &middot; 周翔辉的时光驿站</title>
+  <meta name="description" content="description" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -14,7 +14,6 @@
   
   
   <link href="https://fankaljead.github.io/css/concated.min.css" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" href="https://fankaljead.github.io/categories/windows/index.xml" title="周翔辉的时光驿站" />
   
 <script type="application/javascript">
 var doNotTrack = false;
@@ -36,7 +35,7 @@ if (!doNotTrack) {
   </style>
 </head>
 
-  <body class="list-body">
+  <body class="single-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="https://fankaljead.github.io/" class="nav-text">周翔辉的时光机</a></h1>
   <div class="hamburger-menu">
@@ -69,36 +68,53 @@ if (!doNotTrack) {
   </div>
 </nav>
 
-    <main class="card-container side-gutter">
-      <header class="list-header">
-        <h1 class="list-header-title">Windows</h1>
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+          <h1 class="post-title">TO DO 在 hugo 中插入网易云音乐插件</h1>
+          <p class="post-date">Posted <time datetime="2021-02-24">Feb 24, 2021</time></p>
+        </header>
         
-      </header>
+        
+        <p>效果图如下</p>
+<figure>
+    <img src="https://fankaljead.github.io/ox-hugo/netease-on-hugo.png"/> 
+</figure>
+
+<p>首先给出网易原生嵌入网页的代码示例</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span>
+  <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
+  <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
+  <span style="color:#a6e22e">marginwidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
+  <span style="color:#a6e22e">marginheight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
+  <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">330</span>
+  <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">86</span>
+  <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//music.163.com/outchain/player?type=2&amp;id=1387564796&amp;auto=1&amp;height=66&#34;</span>&gt;
+&lt;/<span style="color:#f92672">iframe</span>&gt;
+</code></pre></div>
+      </article>
       
-      
+    </main>
+    <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://fankaljead.github.io/posts/life/2021-02-11/" class="card blog-card" rel="bookmark" >
+  href="https://fankaljead.github.io/posts/ox-hugo/my-archlinux-laptop-2021-02-22/" class="card blog-card" rel="bookmark" >
   
-  <div class="card-img-container">
-    <picture>
-      
-      
-      <source srcset="https://fankaljead.github.io/posts/life/2021-02-11/desktop_hu437fd8ba916ae9e86c3b4c8d602469c7_2000862_400x300_fit_lanczos_2.png">
-      <img src="https://fankaljead.github.io/posts/life/2021-02-11/desktop_hu437fd8ba916ae9e86c3b4c8d602469c7_2000862_400x300_fit_lanczos_2.png" class="card-img" >
-    </picture>
-  </div>
   <article class="card-body">
-    <h2 class="card-title">2021 02 11 我的 Win10 PC</h2>
-    <p class="card-text">周翔辉在2021年使用的Windows10，包括软件，桌面设置</p>
+    <h2 class="card-title">2021-02-22 我的 ArchLinux 电脑</h2>
+    <p class="card-text">writing hugo blog in org subtree export</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2021-02-12">Feb 12, 2021</time></p>
-      <p>#Life #Windows </p>
+      <p>Posted <time datetime="0001-01-01 11:00">Jan 1, 0001</time></p>
+      <p>#linux #life </p>
     </div>
   </article>
 </a>
-    </main>
-    
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://fankaljead.github.io/" class="card home-card" style="background-image: url( https://fankaljead.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>

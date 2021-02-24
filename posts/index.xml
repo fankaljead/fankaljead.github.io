@@ -4,11 +4,18 @@
     <link>https://fankaljead.github.io/posts/</link>
     <description>Recent content in Posts on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 23 Feb 2021 17:14:09 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Feb 2021 11:55:19 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>TO DO 在 hugo 中插入网易云音乐插件</title>
+      <link>https://fankaljead.github.io/posts/ox-hugo/use-netease-music-in-hugo/</link>
+      <pubDate>Wed, 24 Feb 2021 11:55:19 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/posts/ox-hugo/use-netease-music-in-hugo/</guid>
+      <description>description</description>
+    </item><item>
       <title>2021-02-22 我的 ArchLinux 电脑</title>
       <link>https://fankaljead.github.io/posts/ox-hugo/my-archlinux-laptop-2021-02-22/</link>
       <pubDate>Tue, 23 Feb 2021 17:14:09 +0800</pubDate>
@@ -71,13 +78,6 @@
       
       <guid>https://fankaljead.github.io/posts/learning/%E5%8F%8C%E6%8B%BC/</guid>
       <description>双拼是汉语拼音输入法的一种编码方案。相对于全拼而言，使用双拼输入汉字时只需输入一个代表声母的字母，一个代表韵母的字母，就可以打出任意一个中文单字了。</description>
-    </item><item>
-      <title>2020 03 我的桌面 record</title>
-      <link>https://fankaljead.github.io/posts/linux/my-desktop-2020-03/</link>
-      <pubDate>Sun, 08 Mar 2020 14:56:46 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/linux/my-desktop-2020-03/</guid>
-      <description>Manjaro Desktop 记录，2020-03日志。</description>
     </item>
   </channel>
 </rss>
