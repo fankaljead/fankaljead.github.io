@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>TO DO 在 hugo 中插入网易云音乐插件 &middot; 周翔辉的时光驿站</title>
-  <meta name="description" content="description" />
+  <title>在 hugo 中插入网易云音乐插件 &middot; 周翔辉的时光驿站</title>
+  <meta name="description" content="在 hugo 中使用嵌入的网易云音乐播放器" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -71,8 +71,8 @@ if (!doNotTrack) {
     <main class="content side-text-padding">
       <article class="post dropcase">
         <header class="post-header">
-          <h1 class="post-title">TO DO 在 hugo 中插入网易云音乐插件</h1>
-          <p class="post-date">Posted <time datetime="2021-02-24">Feb 24, 2021</time></p>
+          <h1 class="post-title">在 hugo 中插入网易云音乐插件</h1>
+          <p class="post-date">Posted <time datetime="2021-02-25">Feb 25, 2021</time></p>
         </header>
         
         
@@ -91,6 +91,24 @@ if (!doNotTrack) {
   <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">86</span>
   <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//music.163.com/outchain/player?type=2&amp;id=1387564796&amp;auto=1&amp;height=66&#34;</span>&gt;
 &lt;/<span style="color:#f92672">iframe</span>&gt;
+</code></pre></div><p>显然，很遗憾，原生的 hugo 并不支持上面的 <code>iframe</code> 标签嵌入</p>
+<p>不过幸运的是 hugo 提供了一种自定义的方式来添加自己的 <a href="https://gohugo.io/templates/shortcode-templates/">shortcode-templates</a></p>
+<p>首先，创建自定义的模板文件是在 <code>layout/shortcodes</code> 文件夹下
+<img src="https://fankaljead.github.io/ox-hugo/shortcode-ll.png" alt=""></p>
+<p>例如，这里我创建了 <code>neteasemusic.html</code> 这个模板文件，内容如下</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ with .Get &#34;id&#34; }}
+    &lt;<span style="color:#f92672">iframe</span>
+        <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
+        <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
+        <span style="color:#a6e22e">marginwidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
+        <span style="color:#a6e22e">marginheight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
+        <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">60%</span>
+        <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">86</span>
+        <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//music.163.com/outchain/player?type=2&amp;id={{ . }}&amp;auto=1&amp;height=66&#34;</span>&gt;
+    &lt;/<span style="color:#f92672">iframe</span>&gt;
+{{ end }}
+</code></pre></div><p>然后，在创建的 <code>markdown</code> 文件里面使用即可</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">{{&lt; <span style="color:#f92672">neteasemusic</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1387564796&#34;</span> &gt;}}
 </code></pre></div>
       </article>
       
