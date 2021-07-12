@@ -1,5 +1,0 @@
-* Blog
-** create a new post
-#+BEGIN_SRC bash
-hugo new posts/linux/index.md
-#+END_SRC bash
