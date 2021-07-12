@@ -12,8 +12,11 @@
         body {
             -webkit-font-smoothing: antialiased;
             font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-            background-image: url('https://raw.githubusercontent.com/we11cheng/we11cheng.github.io/master/bg.jpg');
+            background-image: url('bg.png');
+            /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
             font-size: 85%;
+            
             margin: 0;
         }
 
@@ -51,7 +54,7 @@
     </div>
     <script language="javascript">
         function timer() {
-            window.setTimeout("show_date_time()", 1000);
+            // window.setTimeout("show_date_time()", 1000);
             var start = new Date("2021-07-10 21:00:00"); // 2015.7.2
             var t = new Date().getTime() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
@@ -72,6 +75,7 @@
             document.getElementById('s').innerHTML = s;
         }
         timer();
+        setInterval(timer, 1000);
     </script>
 
 
