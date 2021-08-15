@@ -27,7 +27,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
   <style>
     body {
       background: #ecedef url("https://fankaljead.github.io/img/ignasi_pattern_s.png") repeat;
@@ -77,8 +76,8 @@ if (!doNotTrack) {
         <picture class="post-figure">
           
           
-          <source srcset="https://fankaljead.github.io/posts/linux/install-latex/LaTeX_logo_hu6f663d904b92bbb3ff014f98b5960c11_24293_800x0_resize_lanczos_2.png">
-          <img src="https://fankaljead.github.io/posts/linux/install-latex/LaTeX_logo_hu6f663d904b92bbb3ff014f98b5960c11_24293_800x0_resize_lanczos_2.png" alt="latex install record">
+          <source srcset="https://fankaljead.github.io/posts/linux/install-latex/LaTeX_logo_hu6f663d904b92bbb3ff014f98b5960c11_24293_800x0_resize_lanczos_3.png">
+          <img src="https://fankaljead.github.io/posts/linux/install-latex/LaTeX_logo_hu6f663d904b92bbb3ff014f98b5960c11_24293_800x0_resize_lanczos_3.png" alt="latex install record">
         </picture>
         <h2>Contents</h2>
           <nav id="TableOfContents">
@@ -102,27 +101,27 @@ if (!doNotTrack) {
 <ul>
 <li>挂载 texlive.iso</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mount texlive.iso /mnt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mount texlive.iso /mnt
 $ cd /mnt
 </code></pre></div><ul>
 <li>使用 <code>texlive</code> 提供的 <code>install-tl </code>脚步安装，一路默认</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ./install-tl
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ./install-tl
 </code></pre></div><ul>
 <li>配置<code>texlive</code>环境变量</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo <span style="color:#e6db74">`</span>export PATH<span style="color:#f92672">=</span>$PATH:/usr/local/texlive/2019/bin/x86_64-linux<span style="color:#e6db74">`</span> &gt;&gt; .xprofile
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo <span style="color:#e6db74">`</span>export PATH<span style="color:#f92672">=</span>$PATH:/usr/local/texlive/2019/bin/x86_64-linux<span style="color:#e6db74">`</span> &gt;&gt; .xprofile
 </code></pre></div><ul>
 <li>测试安装的 texlive，使用<code>xelatex</code>编译一下 <code>test.tex</code></li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#75715e">%% test.tex
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#75715e">%% test.tex
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">\documentclass</span>{article}
 <span style="color:#66d9ef">\usepackage</span>{ctex}
 
 <span style="color:#66d9ef">\begin</span>{document}
 你好 <span style="color:#66d9ef">\LaTeX</span>
 <span style="color:#66d9ef">\end</span>{document}
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xelatex test.tex
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xelatex test.tex
 <span style="color:#75715e"># 编译过程</span>
 $ ls   
 $ test.aux  test.log  test.pdf  test.tex  x.lo
@@ -139,13 +138,13 @@ $ zathura test.pdf <span style="color:#75715e"># 查看编译成功的 test.pdf<
 </li>
 <li>
 <p>安装 <a href="https://develop.spacemacs.org/">spacamacs</a>，这里使用的是 <code>develop</code>分支</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 $ cd ~/.emacs.d
 $ git checkout develop <span style="color:#75715e"># 切换到 develop 分支</span>
 </code></pre></div></li>
 <li>
 <p>打开 <code>emacs</code> 安装 <code>spacemacs</code> ，这里可能会遇到网络过慢的问题，解决办法就是，先把<code>emacs</code>关闭，然后在<code>~/.spacemacs</code>中加入清华的 <a href="https://mirrors.tuna.tsinghua.edu.cn/help/elpa/">elpa源</a>：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在 (defun dotspacemacs/user-init () 中加入</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在 (defun dotspacemacs/user-init () 中加入</span>
 (<span style="color:#66d9ef">setq</span> configuration-layer-elpa-archives
        <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">&#34;melpa-cn&#34;</span> <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/&#34;</span>)
         (<span style="color:#e6db74">&#34;org-cn&#34;</span>   <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;http://mirrors.tuna.tsinghua.edu.cn/elpa/org/&#34;</span>)
@@ -153,10 +152,10 @@ $ git checkout develop <span style="color:#75715e"># 切换到 develop 分支</s
 </code></pre></div></li>
 <li>
 <p>配置 <a href="https://develop.spacemacs.org/layers/+lang/latex/README.html">latex layer</a>, 打开 emacs, 按下<code>space f e d</code>，编辑配置文件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在dotspacemacs-configuration-layers中加入</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在dotspacemacs-configuration-layers中加入</span>
 (latex <span style="color:#e6db74">:variables</span> latex-build-command <span style="color:#e6db74">&#34;XeLaTeX&#34;</span>)
 </code></pre></div><p>然后退出 <code>emacs</code>，并重新打开, 按下<code>space f e d</code>，编辑配置文件</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在(defun dotspacemacs/user-config () 中加入</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp"><span style="color:#75715e">;; 在(defun dotspacemacs/user-config () 中加入</span>
 (add-hook <span style="color:#e6db74">&#39;LaTeX-mode-hook</span>
             <span style="color:#a6e22e">#&#39;</span>(lambda ()
                 (add-to-list <span style="color:#e6db74">&#39;TeX-command-list</span> <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;XeLaTeX&#34;</span> <span style="color:#e6db74">&#34;%`xelatex --synctex=1%(mode)%&#39; %t&#34;</span> TeX-run-TeX <span style="color:#66d9ef">nil</span> <span style="color:#66d9ef">t</span>))))

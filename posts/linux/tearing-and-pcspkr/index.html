@@ -27,7 +27,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
   <style>
     body {
       background: #ecedef url("https://fankaljead.github.io/img/ignasi_pattern_s.png") repeat;
@@ -77,8 +76,8 @@ if (!doNotTrack) {
         <picture class="post-figure">
           
           
-          <source srcset="https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/desktop3_hufddaaf9ffb5e9efe2fffbc8e331e2c42_1534227_800x0_resize_lanczos_2.png">
-          <img src="https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/desktop3_hufddaaf9ffb5e9efe2fffbc8e331e2c42_1534227_800x0_resize_lanczos_2.png" >
+          <source srcset="https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/desktop3_hufddaaf9ffb5e9efe2fffbc8e331e2c42_1534227_800x0_resize_lanczos_3.png">
+          <img src="https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/desktop3_hufddaaf9ffb5e9efe2fffbc8e331e2c42_1534227_800x0_resize_lanczos_3.png" >
         </picture>
         
         <h2 id="解决linux中tiling-manager画面撕裂和死亡bi-bi-bi的声音">解决linux中tiling manager画面撕裂和死亡bi bi bi的声音</h2>
@@ -95,7 +94,7 @@ if (!doNotTrack) {
 <li>
 <p>解决办法，以bspwm为例</p>
 <p>在运行<code>picom</code>时加上参数<code>--experimental-backends</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># .config/bspwm/bspwmrc</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># .config/bspwm/bspwmrc</span>
 <span style="color:#75715e"># 使用下面命令，而不是直接使用 picom -b</span>
 picom --experimental-backends -b
 </code></pre></div></li>
@@ -104,11 +103,11 @@ picom --experimental-backends -b
 <ol>
 <li>
 <p>临时生效（重启后又有），直接使用：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rmmod pcspkr	
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rmmod pcspkr	
 </code></pre></div></li>
 <li>
 <p>开机后自动屏蔽</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;blacklist pcspkr&#34;</span> &gt; /etc/modprobe.d/nobeep.conf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;blacklist pcspkr&#34;</span> &gt; /etc/modprobe.d/nobeep.conf
 </code></pre></div></li>
 </ol>
 <h3 id="all-done">ALL DONE</h3>
