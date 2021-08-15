@@ -4,11 +4,18 @@
     <link>https://fankaljead.github.io/posts/</link>
     <description>Recent content in Posts on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Feb 2021 15:23:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Aug 2021 20:35:00 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>夏日的雨 :@life:@sub catagory:</title>
+      <link>https://fankaljead.github.io/posts/ox-hugo/%E5%A4%8F%E6%97%A5%E7%9A%84%E9%9B%A8/</link>
+      <pubDate>Sun, 15 Aug 2021 20:35:00 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/posts/ox-hugo/%E5%A4%8F%E6%97%A5%E7%9A%84%E9%9B%A8/</guid>
+      <description>夏日的雨 来得也快 去得也快</description>
+    </item><item>
       <title>在 hugo 中插入网易云音乐插件</title>
       <link>https://fankaljead.github.io/posts/ox-hugo/use-netease-music-in-hugo/</link>
       <pubDate>Fri, 26 Feb 2021 15:23:33 +0800</pubDate>
@@ -71,13 +78,6 @@
       
       <guid>https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/</guid>
       <description>在我这段使用manjaro bspwm的时间内，遇到过一个奇怪的问题，首先我是先安装的manjaro cinnamon，然后再安装的bspwm，这里就出现了一个奇怪的问题...</description>
-    </item><item>
-      <title>小鹤双拼的使用</title>
-      <link>https://fankaljead.github.io/posts/learning/%E5%8F%8C%E6%8B%BC/</link>
-      <pubDate>Sun, 29 Mar 2020 10:33:22 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/learning/%E5%8F%8C%E6%8B%BC/</guid>
-      <description>双拼是汉语拼音输入法的一种编码方案。相对于全拼而言，使用双拼输入汉字时只需输入一个代表声母的字母，一个代表韵母的字母，就可以打出任意一个中文单字了。</description>
     </item>
   </channel>
 </rss>
