@@ -4,11 +4,18 @@
     <link>https://fankaljead.github.io/categories/life/</link>
     <description>Recent content in life on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Feb 2021 15:23:33 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Sep 2021 07:02:56 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/categories/life/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>在 ArchLinux 中使用 Clash</title>
+      <link>https://fankaljead.github.io/posts/ox-hugo/%E5%9C%A8-archlinux-%E4%B8%AD%E4%BD%BF%E7%94%A8-clash/</link>
+      <pubDate>Mon, 06 Sep 2021 07:02:56 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/posts/ox-hugo/%E5%9C%A8-archlinux-%E4%B8%AD%E4%BD%BF%E7%94%A8-clash/</guid>
+      <description>使用 Clash 进行 FQ,并设置代理</description>
+    </item><item>
       <title>在 hugo 中插入网易云音乐插件</title>
       <link>https://fankaljead.github.io/posts/ox-hugo/use-netease-music-in-hugo/</link>
       <pubDate>Fri, 26 Feb 2021 15:23:33 +0800</pubDate>

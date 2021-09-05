@@ -4,11 +4,18 @@
     <link>https://fankaljead.github.io/posts/</link>
     <description>Recent content in Posts on 周翔辉的时光驿站</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Aug 2021 20:39:33 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Sep 2021 07:02:56 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>解决linux中tiling manager画面撕裂和死亡bi bi bi的声音</title>
+      <link>https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/</link>
+      <pubDate>Fri, 03 Apr 2020 08:59:42 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/</guid>
+      <description>在我这段使用manjaro bspwm的时间内，遇到过一个奇怪的问题，首先我是先安装的manjaro cinnamon，然后再安装的bspwm，这里就出现了一个奇怪的问题...</description>
+    </item><item>
       <title>小鹤双拼的使用</title>
       <link>https://fankaljead.github.io/posts/learning/%E5%8F%8C%E6%8B%BC/</link>
       <pubDate>Sun, 29 Mar 2020 10:33:22 +0800</pubDate>
