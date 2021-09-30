@@ -27,9 +27,10 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
+
   <style>
     body {
-      background: #ecedef url("https://fankaljead.github.io/img/ignasi_pattern_s.png") repeat;
+      background: #ecedef url("https://fankaljead.github.io/img/background.jpg") repeat;
     }
   </style>
 </head>
@@ -76,8 +77,8 @@ if (!doNotTrack) {
         <picture class="post-figure">
           
           
-          <source srcset="https://fankaljead.github.io/posts/linux/hugo-install/hugo_hu06d97524bb6ddff53d2cde9c99402890_299549_800x0_resize_lanczos_3.png">
-          <img src="https://fankaljead.github.io/posts/linux/hugo-install/hugo_hu06d97524bb6ddff53d2cde9c99402890_299549_800x0_resize_lanczos_3.png" alt="hugo preview">
+          <source srcset="https://fankaljead.github.io/posts/linux/hugo-install/hugo_hu06d97524bb6ddff53d2cde9c99402890_299549_800x0_resize_lanczos_2.png">
+          <img src="https://fankaljead.github.io/posts/linux/hugo-install/hugo_hu06d97524bb6ddff53d2cde9c99402890_299549_800x0_resize_lanczos_2.png" alt="hugo preview">
         </picture>
         <h2>Contents</h2>
           <nav id="TableOfContents">
@@ -96,22 +97,22 @@ if (!doNotTrack) {
 <ul>
 <li>使用包管理器安装</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">＃ ArchLinux
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">＃ ArchLinux
 $ sudo pacman -S hugo
 </code></pre></div><ul>
 <li>使用源码安装</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir $HOME/src
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir $HOME/src
 $ cd $HOME/src
 $ git clone https://github.com/gohugoio/hugo.git
 $ cd hugo
 $ go install
 </code></pre></div><h2 id="使用-hugo-生成站点">使用 Hugo 生成站点</h2>
 <p>使用Hugo快速生成站点，比如希望生成到 /home/zxh/blog 路径：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new site /home/zxh/blog
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new site /home/zxh/blog
 </code></pre></div><h2 id="创建文章">创建文章</h2>
 <p>例如想要创建一篇post/linux/index 页面</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new posts/linux/index.md
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ hugo new posts/linux/index.md
 </code></pre></div><p>初始页面包含下列元数据：</p>
 <p>title: &ldquo;index&rdquo; <code>标题</code>
 date: 2020-03-07T11:26:58+08:00 <code>时间</code>
@@ -127,19 +128,19 @@ params:
 description: &ldquo;Description for the featured image, used as the alt text&rdquo; <code>图片描述</code></li>
 </ul>
 <h2 id="将hugo-markdown-文章打包成-html文件">将Hugo Markdown 文章打包成 html文件</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#75715e"># aether 是 hugo 的主题， 后面加上 --baseUrl 才会有样式</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#75715e"># aether 是 hugo 的主题， 后面加上 --baseUrl 才会有样式</span>
 $ hugo --theme<span style="color:#f92672">=</span>aether --baseUrl<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fankaljead.github.io/&#34;</span>
 </code></pre></div><h2 id="发布到-github-产生自己的博客">发布到 Github 产生自己的博客</h2>
 <ol>
 <li>进入打包后的 <code>public</code> 文件夹中;</li>
 <li>将这个文件夹与 fankaljead.github.io 链接起来</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git init 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git init 
 $ git remote add origin git@github.com:fankaljead/fankaljead.github.io.git
 </code></pre></div><ol start="3">
 <li>git 提交</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git add .
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git add .
 $ git commit -m <span style="color:#e6db74">&#34;balablala&#34;</span>
 $ git push --set-upstream origin master
 </code></pre></div><h2 id="bingo">Bingo</h2>

@@ -27,9 +27,10 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
+
   <style>
     body {
-      background: #ecedef url("https://fankaljead.github.io/img/ignasi_pattern_s.png") repeat;
+      background: #ecedef url("https://fankaljead.github.io/img/background.jpg") repeat;
     }
   </style>
 </head>
@@ -76,28 +77,30 @@ if (!doNotTrack) {
         
         
         <h2 id="达到的效果如下">达到的效果如下</h2>
-<figure><img src="https://fankaljead.github.io/ox-hugo/screenshot-02.png"/>
+<figure>
+    <img src="https://fankaljead.github.io/ox-hugo/screenshot-02.png"/> 
 </figure>
 
-<figure><img src="https://fankaljead.github.io/ox-hugo/screenshot-03.png"/>
+<figure>
+    <img src="https://fankaljead.github.io/ox-hugo/screenshot-03.png"/> 
 </figure>
 
 <h2 id="安装">安装</h2>
 <ul>
 <li>
 <p>安装 Clash</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  paru -S clash-dev-git clash-dashboard
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  paru -S clash-dev-git clash-dashboard
 </code></pre></div></li>
 <li>
 <p>配置 Clash 订阅</p>
 <ul>
 <li>
 <p>从 订阅更新 Clash 节点</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">      wget -O ~/.config/clash/config.yaml someurl.com
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">      wget -O ~/.config/clash/config.yaml someurl.com
 </code></pre></div></li>
 <li>
 <p>编辑 clashup.json</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    {
       <span style="color:#f92672">&#34;http_port&#34;</span>: <span style="color:#ae81ff">7890</span>,
       <span style="color:#f92672">&#34;socks5_port&#34;</span>: <span style="color:#ae81ff">7891</span>,
       <span style="color:#f92672">&#34;redir_port&#34;</span>: <span style="color:#ae81ff">7892</span>,
@@ -113,13 +116,13 @@ if (!doNotTrack) {
 </code></pre></div></li>
 <li>
 <p>启动 Clash</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    cd ~/.config/clash
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    cd ~/.config/clash
 
     clash -d .
 </code></pre></div></li>
 <li>
 <p>在终端中使用代理</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    export https_proxy<span style="color:#f92672">=</span>http://127.0.0.1:7890
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    export https_proxy<span style="color:#f92672">=</span>http://127.0.0.1:7890
     export http_proxy<span style="color:#f92672">=</span>http://127.0.0.1:7890
 </code></pre></div></li>
 <li>

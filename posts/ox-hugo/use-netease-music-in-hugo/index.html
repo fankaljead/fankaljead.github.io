@@ -27,9 +27,10 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
+
   <style>
     body {
-      background: #ecedef url("https://fankaljead.github.io/img/ignasi_pattern_s.png") repeat;
+      background: #ecedef url("https://fankaljead.github.io/img/background.jpg") repeat;
     }
   </style>
 </head>
@@ -76,11 +77,12 @@ if (!doNotTrack) {
         
         
         <p>效果图如下</p>
-<figure><img src="https://fankaljead.github.io/ox-hugo/netease-on-hugo.png"/>
+<figure>
+    <img src="https://fankaljead.github.io/ox-hugo/netease-on-hugo.png"/> 
 </figure>
 
 <p>首先给出网易原生嵌入网页的代码示例</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span>
   <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
   <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
   <span style="color:#a6e22e">marginwidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
@@ -94,7 +96,7 @@ if (!doNotTrack) {
 <p>首先，创建自定义的模板文件是在 <code>layout/shortcodes</code> 文件夹下
 <img src="https://fankaljead.github.io/ox-hugo/shortcode-ll.png" alt=""></p>
 <p>例如，这里我创建了 <code>neteasemusic.html</code> 这个模板文件，内容如下</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ with .Get &#34;id&#34; }}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ with .Get &#34;id&#34; }}
     &lt;<span style="color:#f92672">iframe</span>
         <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
         <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
@@ -106,7 +108,7 @@ if (!doNotTrack) {
     &lt;/<span style="color:#f92672">iframe</span>&gt;
 {{ end }}
 </code></pre></div><p>然后，在创建的 <code>markdown</code> 文件里面使用即可</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">{{&lt; <span style="color:#f92672">neteasemusic</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1443928242&#34;</span> &gt;}}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">{{&lt; <span style="color:#f92672">neteasemusic</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1443928242&#34;</span> &gt;}}
 </code></pre></div><p>效果如下</p>
 
     
