@@ -4,7 +4,7 @@
     <link>https://fankaljead.github.io/posts/</link>
     <description>Recent content in Posts on 不可摘星辰</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Sep 2021 23:48:26 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 Oct 2021 23:20:26 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -51,6 +51,13 @@
       <guid>https://fankaljead.github.io/posts/ox-hugo/writing-hugo-blog-in-org-subtree-export/</guid>
       <description>writing hugo blog in org subtree export</description>
     </item><item>
+      <title>没啥用的学习之小鹤音形</title>
+      <link>https://fankaljead.github.io/posts/life/2021-10-10/</link>
+      <pubDate>Sun, 10 Oct 2021 23:20:26 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/posts/life/2021-10-10/</guid>
+      <description></description>
+    </item><item>
       <title>2020-2021 简要的一点点总结 </title>
       <link>https://fankaljead.github.io/posts/life/2021-09-30/</link>
       <pubDate>Thu, 30 Sep 2021 23:48:26 +0800</pubDate>
@@ -71,13 +78,6 @@
       
       <guid>https://fankaljead.github.io/posts/linux/2020-05-02/</guid>
       <description>Pop!_OS is an operating system for STEM and creative professionals who use their computer as a tool to discover and create. Unleash your potential on secure, reliable open source software. Based on your exceptional curiosity, we sense you have a lot of it. </description>
-    </item><item>
-      <title>在spacemacs org-mode中插入目录</title>
-      <link>https://fankaljead.github.io/posts/emacs/2020-04-17/</link>
-      <pubDate>Fri, 17 Apr 2020 09:10:56 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/emacs/2020-04-17/</guid>
-      <description>org-mode是emacs中极为强大的文档工具，记录一下怎样在org稳定中插入目录</description>
     </item>
   </channel>
 </rss>
