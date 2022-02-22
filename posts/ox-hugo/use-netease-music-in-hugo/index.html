@@ -30,7 +30,7 @@ if (!doNotTrack) {
 
   <style>
     body {
-      background: #ecedef url("https://fankaljead.github.io/img/background.jpg") repeat;
+      background: #ecedef url("https://fankaljead.github.io/img/background-galaxy.jpg") repeat;
     }
   </style>
 </head>
@@ -84,33 +84,33 @@ if (!doNotTrack) {
 </figure>
 
 <p>首先给出网易原生嵌入网页的代码示例</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span>
-  <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
-  <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-  <span style="color:#a6e22e">marginwidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-  <span style="color:#a6e22e">marginheight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-  <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">330</span>
-  <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">86</span>
-  <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//music.163.com/outchain/player?type=2&amp;id=1387564796&amp;auto=1&amp;height=66&#34;</span>&gt;
-&lt;/<span style="color:#f92672">iframe</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;iframe
+  frameborder=<span style="color:#009c00">&#34;no&#34;</span>
+  border=<span style="color:#009c00">&#34;0&#34;</span>
+  marginwidth=<span style="color:#009c00">&#34;0&#34;</span>
+  marginheight=<span style="color:#009c00">&#34;0&#34;</span>
+  width=<span style="color:#009c00">330</span>
+  height=<span style="color:#009c00">86</span>
+  src=<span style="color:#009c00">&#34;//music.163.com/outchain/player?type=2&amp;id=1387564796&amp;auto=1&amp;height=66&#34;</span>&gt;
+&lt;/iframe&gt;
 </code></pre></div><p>显然，很遗憾，原生的 hugo 并不支持上面的 <code>iframe</code> 标签嵌入</p>
 <p>不过幸运的是 hugo 提供了一种自定义的方式来添加自己的 <a href="https://gohugo.io/templates/shortcode-templates/">shortcode-templates</a></p>
 <p>首先，创建自定义的模板文件是在 <code>layout/shortcodes</code> 文件夹下
 <img src="https://fankaljead.github.io/ox-hugo/shortcode-ll.png" alt=""></p>
 <p>例如，这里我创建了 <code>neteasemusic.html</code> 这个模板文件，内容如下</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ with .Get &#34;id&#34; }}
-    &lt;<span style="color:#f92672">iframe</span>
-        <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
-        <span style="color:#a6e22e">border</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-        <span style="color:#a6e22e">marginwidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-        <span style="color:#a6e22e">marginheight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-        <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">60%</span>
-        <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">86</span>
-        <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//music.163.com/outchain/player?type=2&amp;id={{ . }}&amp;auto=1&amp;height=66&#34;</span>&gt;
-    &lt;/<span style="color:#f92672">iframe</span>&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ with .Get &#34;id&#34; }}
+    &lt;iframe
+        frameborder=<span style="color:#009c00">&#34;no&#34;</span>
+        border=<span style="color:#009c00">&#34;0&#34;</span>
+        marginwidth=<span style="color:#009c00">&#34;0&#34;</span>
+        marginheight=<span style="color:#009c00">&#34;0&#34;</span>
+        width=<span style="color:#009c00">60%</span>
+        height=<span style="color:#009c00">86</span>
+        src=<span style="color:#009c00">&#34;//music.163.com/outchain/player?type=2&amp;id={{ . }}&amp;auto=1&amp;height=66&#34;</span>&gt;
+    &lt;/iframe&gt;
 {{ end }}
 </code></pre></div><p>然后，在创建的 <code>markdown</code> 文件里面使用即可</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">{{&lt; <span style="color:#f92672">neteasemusic</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1443928242&#34;</span> &gt;}}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">{{&lt; neteasemusic id=<span style="color:#009c00">&#34;1443928242&#34;</span> &gt;}}
 </code></pre></div><p>效果如下</p>
 
     

@@ -30,7 +30,7 @@ if (!doNotTrack) {
 
   <style>
     body {
-      background: #ecedef url("https://fankaljead.github.io/img/background.jpg") repeat;
+      background: #ecedef url("https://fankaljead.github.io/img/background-galaxy.jpg") repeat;
     }
   </style>
 </head>
@@ -91,41 +91,41 @@ if (!doNotTrack) {
 <ul>
 <li>
 <p>安装 Clash</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  paru -S clash-dev-git clash-dashboard
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  paru -S clash-dev-git clash-dashboard
 </code></pre></div></li>
 <li>
 <p>配置 Clash 订阅</p>
 <ul>
 <li>
 <p>从 订阅更新 Clash 节点</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">      wget -O ~/.config/clash/config.yaml someurl.com
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">      wget -O ~/.config/clash/config.yaml someurl.com
 </code></pre></div></li>
 <li>
 <p>编辑 clashup.json</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    {
-      <span style="color:#f92672">&#34;http_port&#34;</span>: <span style="color:#ae81ff">7890</span>,
-      <span style="color:#f92672">&#34;socks5_port&#34;</span>: <span style="color:#ae81ff">7891</span>,
-      <span style="color:#f92672">&#34;redir_port&#34;</span>: <span style="color:#ae81ff">7892</span>,
-      <span style="color:#f92672">&#34;allow_lan&#34;</span>: <span style="color:#66d9ef">true</span>,
-      <span style="color:#f92672">&#34;external_controller&#34;</span>: <span style="color:#e6db74">&#34;127.0.0.1:9090&#34;</span>,
-      <span style="color:#f92672">&#34;secret&#34;</span>: <span style="color:#ae81ff">1234</span>,
-      <span style="color:#f92672">&#34;subscribe_url&#34;</span>: <span style="color:#e6db74">&#34;yoururl&#34;</span>,
-      <span style="color:#f92672">&#34;is_subscribe_banned&#34;</span>: <span style="color:#66d9ef">false</span>,
-      <span style="color:#f92672">&#34;custom_rules&#34;</span>: [],
-      <span style="color:#f92672">&#34;mmdb_file_url&#34;</span>: <span style="color:#e6db74">&#34;http://www.ideame.top/mmdb/Country.mmdb&#34;</span>,
-      <span style="color:#f92672">&#34;mmdb_version_url&#34;</span>: <span style="color:#e6db74">&#34;http://www.ideame.top/mmdb/version&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    {
+      &#34;http_port&#34;: 7890,
+      &#34;socks5_port&#34;: 7891,
+      &#34;redir_port&#34;: 7892,
+      &#34;allow_lan&#34;: <span style="color:#00f">true</span>,
+      &#34;external_controller&#34;: <span style="color:#009c00">&#34;127.0.0.1:9090&#34;</span>,
+      &#34;secret&#34;: 1234,
+      &#34;subscribe_url&#34;: <span style="color:#009c00">&#34;yoururl&#34;</span>,
+      &#34;is_subscribe_banned&#34;: <span style="color:#00f">false</span>,
+      &#34;custom_rules&#34;: [],
+      &#34;mmdb_file_url&#34;: <span style="color:#009c00">&#34;http://www.ideame.top/mmdb/Country.mmdb&#34;</span>,
+      &#34;mmdb_version_url&#34;: <span style="color:#009c00">&#34;http://www.ideame.top/mmdb/version&#34;</span>
     }
 </code></pre></div></li>
 <li>
 <p>启动 Clash</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    cd ~/.config/clash
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    cd ~/.config/clash
 
     clash -d .
 </code></pre></div></li>
 <li>
 <p>在终端中使用代理</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    export https_proxy<span style="color:#f92672">=</span>http://127.0.0.1:7890
-    export http_proxy<span style="color:#f92672">=</span>http://127.0.0.1:7890
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    export https_proxy=http://127.0.0.1:7890
+    export http_proxy=http://127.0.0.1:7890
 </code></pre></div></li>
 <li>
 <p>设置浏览器代理

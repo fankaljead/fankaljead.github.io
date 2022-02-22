@@ -30,7 +30,7 @@ if (!doNotTrack) {
 
   <style>
     body {
-      background: #ecedef url("https://fankaljead.github.io/img/background.jpg") repeat;
+      background: #ecedef url("https://fankaljead.github.io/img/background-galaxy.jpg") repeat;
     }
   </style>
 </head>
@@ -97,8 +97,8 @@ if (!doNotTrack) {
 <li>
 <p>解决办法，以bspwm为例</p>
 <p>在运行<code>picom</code>时加上参数<code>--experimental-backends</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># .config/bspwm/bspwmrc</span>
-<span style="color:#75715e"># 使用下面命令，而不是直接使用 picom -b</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f00;font-style:italic"># .config/bspwm/bspwmrc</span>
+<span style="color:#f00;font-style:italic"># 使用下面命令，而不是直接使用 picom -b</span>
 picom --experimental-backends -b
 </code></pre></div></li>
 </ol>
@@ -106,11 +106,11 @@ picom --experimental-backends -b
 <ol>
 <li>
 <p>临时生效（重启后又有），直接使用：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rmmod pcspkr	
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo rmmod pcspkr	
 </code></pre></div></li>
 <li>
 <p>开机后自动屏蔽</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;blacklist pcspkr&#34;</span> &gt; /etc/modprobe.d/nobeep.conf
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#009c00">&#34;blacklist pcspkr&#34;</span> &gt; /etc/modprobe.d/nobeep.conf
 </code></pre></div></li>
 </ol>
 <h3 id="all-done">ALL DONE</h3>
