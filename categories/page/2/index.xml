@@ -1,0 +1,34 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories - 不可摘星辰</title>
+    <link>https://fankaljead.github.io/categories/</link>
+    <description>Recent content in Categories on 不可摘星辰</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 10 Oct 2021 23:20:26 +0800</lastBuildDate>
+    
+        <atom:link href="https://fankaljead.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>learning</title>
+      <link>https://fankaljead.github.io/categories/learning/</link>
+      <pubDate>Sun, 29 Mar 2020 10:33:22 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/categories/learning/</guid>
+      <description></description>
+    </item><item>
+      <title>LaTeX</title>
+      <link>https://fankaljead.github.io/categories/latex/</link>
+      <pubDate>Sat, 07 Mar 2020 16:57:30 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/categories/latex/</guid>
+      <description></description>
+    </item><item>
+      <title>Web</title>
+      <link>https://fankaljead.github.io/categories/web/</link>
+      <pubDate>Sat, 07 Mar 2020 11:26:58 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/categories/web/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -43,20 +43,6 @@
       
       <guid>https://fankaljead.github.io/posts/linux/tearing-and-pcspkr/</guid>
       <description>在我这段使用manjaro bspwm的时间内，遇到过一个奇怪的问题，首先我是先安装的manjaro cinnamon，然后再安装的bspwm，这里就出现了一个奇怪的问题...</description>
-    </item><item>
-      <title>2020 03 我的桌面 record</title>
-      <link>https://fankaljead.github.io/posts/linux/my-desktop-2020-03/</link>
-      <pubDate>Sun, 08 Mar 2020 14:56:46 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/linux/my-desktop-2020-03/</guid>
-      <description>Manjaro Desktop 记录，2020-03日志。</description>
-    </item><item>
-      <title>使用Hugo搭建个人博客</title>
-      <link>https://fankaljead.github.io/posts/linux/hugo-install/</link>
-      <pubDate>Sat, 07 Mar 2020 17:07:42 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/posts/linux/hugo-install/</guid>
-      <description>Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。下面介绍一下使用 Hugo 来搭建Github个人博客的过程。</description>
     </item>
   </channel>
 </rss>
