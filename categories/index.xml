@@ -1,14 +1,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories - 不可摘星辰</title>
+    <title>Categories - 手可摘星辰</title>
     <link>https://fankaljead.github.io/categories/</link>
-    <description>Recent content in Categories on 不可摘星辰</description>
+    <description>Recent content in Categories on 手可摘星辰</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 Oct 2021 23:20:26 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 23 Feb 2022 11:08:41 +0800</lastBuildDate>
     
         <atom:link href="https://fankaljead.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>learning</title>
+      <link>https://fankaljead.github.io/categories/learning/</link>
+      <pubDate>Wed, 23 Feb 2022 11:08:41 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/categories/learning/</guid>
+      <description></description>
+    </item><item>
+      <title>面试</title>
+      <link>https://fankaljead.github.io/categories/%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Wed, 23 Feb 2022 11:08:41 +0800</pubDate>
+      
+      <guid>https://fankaljead.github.io/categories/%E9%9D%A2%E8%AF%95/</guid>
+      <description></description>
+    </item><item>
       <title>life</title>
       <link>https://fankaljead.github.io/categories/life/</link>
       <pubDate>Sun, 10 Oct 2021 23:20:26 +0800</pubDate>
@@ -28,20 +42,6 @@
       <pubDate>Fri, 26 Feb 2021 15:23:33 +0800</pubDate>
       
       <guid>https://fankaljead.github.io/categories/hugo/</guid>
-      <description></description>
-    </item><item>
-      <title>Windows</title>
-      <link>https://fankaljead.github.io/categories/windows/</link>
-      <pubDate>Fri, 12 Feb 2021 22:07:06 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/categories/windows/</guid>
-      <description></description>
-    </item><item>
-      <title>emacs</title>
-      <link>https://fankaljead.github.io/categories/emacs/</link>
-      <pubDate>Wed, 09 Sep 2020 20:48:35 +0800</pubDate>
-      
-      <guid>https://fankaljead.github.io/categories/emacs/</guid>
       <description></description>
     </item>
   </channel>
