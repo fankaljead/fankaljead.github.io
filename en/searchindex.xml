@@ -15,7 +15,7 @@ H2O
 Xn + Yn = Zn
 Press CTRL+ALT+Delete to end the session.
 Most salamanders are nocturnal, and hunt for insects, worms, and other small creatures.
-The above quote is excerpted from Rob Pike&rsquo;s talk during Gopherfest, November 18, 2015. &#8617;&#xfe0e;</content></entry><entry><title>Rich Content</title><url>https://fankaljead.github.io/en/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
+The above quote is excerpted from Rob Pike&rsquo;s talk during Gopherfest, November 18, 2015.&#160;&#8617;&#xfe0e;</content></entry><entry><title>Rich Content</title><url>https://fankaljead.github.io/en/post/rich-content/</url><categories/><tags><tag>shortcodes</tag><tag>privacy</tag></tags><content type="html"> Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
 YouTube Privacy Enhanced Shortcode {{/&lt; youtube ZJthWmvUzzc >/}}
 Twitter Simple Shortcode {{/&lt; twitter_simple 1085870671291310081 >/}}
 Vimeo Simple Shortcode {{/&lt; vimeo_simple 48912912 >/}}
