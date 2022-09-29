@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        font-family: "我想做你女朋友";
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
+      .head-time {
+        position: absolute;
+        left: 5.5vw;
+        top: 5vw;
+        padding-right: 3vw;
+        background-color: rgb(54, 140, 245);
+      }
+      .mid-time {
+        position: absolute;
+        left: 6vw;
+        top: 122vw;
+        color: rgb(182, 182, 189);
+        font-size: 1.3em;
+      }
+      .mask-button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10vh;
+        width: 20vw;
+        height: 20vw;
+        background-color: red;
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="head-time">11:32</div>
+
+      <img src="./img/1.png" alt="" />
+      <div class="mid-time"></div>
+      <div class="mask-button"></div>
+    </div>
+    <script>
+      function autoSupplement(val = "2") {
+        val = String(val);
+        return val.padStart(2, "0");
+      }
+      const midTime = document.querySelector(".mid-time");
+      const topTime = document.querySelector(".head-time");
+      const getTime = (date) => {
+        const year = date.getFullYear();
+        const month = autoSupplement(date.getMonth() + 1);
+        const day = autoSupplement(date.getDate());
+        const hour = autoSupplement(date.getHours());
+        const minute = autoSupplement(date.getMinutes());
+        const second = autoSupplement(date.getSeconds());
+
+        return `${year}.${month}.${day} ${hour}:${minute}:${second}`;
+      };
+      const getTopTime = (date) => {
+        const hour = autoSupplement(date.getHours());
+        const minute = autoSupplement(date.getMinutes());
+
+        return `${hour}:${minute}`;
+      };
+      function init() {
+        const date = new Date();
+        midTime.innerHTML = getTime(date);
+        topTime.innerHTML = getTopTime(date);
+      }
+      init();
+
+      setInterval(() => {
+        const date = new Date();
+        midTime.innerHTML = getTime(date);
+      }, 1000);
+
+      setInterval(() => {
+        const date = new Date();
+        topTime.innerHTML = getTopTime(date);
+      }, 60 * 1000);
+
+      const maskButton = document.querySelector(".mask-button");
+      maskButton.addEventListener("click", (e) => {
+        location.href = "./2.html";
+      });
+    </script>
+  </body>
+</html>
