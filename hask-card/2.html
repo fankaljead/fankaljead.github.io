@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body{
+      body {
         font-family: "我想做你女朋友";
       }
       img {
@@ -22,10 +22,10 @@
       }
       .mid-time {
         position: absolute;
-        left: 45vw;
-        top: 95.8vw;
+        left: 42.5vw;
+        top: 94vw;
         color: rgb(182, 182, 189);
-        font-size: 1.2em;
+        font-size: 1em;
         font-weight: 700;
       }
       .mask-button {
@@ -39,11 +39,11 @@
       }
       .address {
         position: absolute;
-        right: 24vw;
-        bottom: 60vw;
+        right: 26vw;
+        bottom: 57vw;
         color: rgb(70, 70, 76);
         font-weight: bolder;
-        font-size: 1.2em;
+        font-size: 0.81em;
       }
     </style>
   </head>
@@ -102,6 +102,24 @@
       maskButton.addEventListener("click", (e) => {
         location.href = "https://fankaljead.github.io/hask-card/index.html";
       });
+
+      function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+
+      document.addEventListener(
+        "touchend",
+        function (e) {
+          toggleFullScreen();
+        },
+        false
+      );
     </script>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body{
+      body {
         font-family: "我想做你女朋友";
       }
       img {
@@ -21,12 +21,22 @@
         padding-right: 3vw;
         background-color: rgb(54, 140, 245);
       }
-      .mid-time {
+      .mid-time-container {
         position: absolute;
         left: 6vw;
-        top: 122vw;
-        color: rgb(182, 182, 189);
-        font-size: 1.3em;
+        top: 119vw;
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        display: flex;
+        align-items: baseline;
+      }
+      .mid-time {
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+      }
+      .mid-seconds {
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
       }
       .mask-button {
         position: absolute;
@@ -44,8 +54,11 @@
     <div class="box">
       <div class="head-time">11:32</div>
 
-      <img src="https://fankaljead.github.io/hask-card/img/1.png" alt="" />
-      <div class="mid-time"></div>
+      <img src="https://fankaljead.github.io/hask-card/img/1.png" alt=""  />
+      <div class="mid-time-container">
+        <div class="mid-time"></div>
+        <div class="mid-seconds"></div>
+      </div>
       <div class="mask-button"></div>
     </div>
     <script>
@@ -54,7 +67,9 @@
         return val.padStart(2, "0");
       }
       const midTime = document.querySelector(".mid-time");
+      const midSeconds = document.querySelector(".mid-seconds");
       const topTime = document.querySelector(".head-time");
+
       const getTime = (date) => {
         const year = date.getFullYear();
         const month = autoSupplement(date.getMonth() + 1);
@@ -63,7 +78,7 @@
         const minute = autoSupplement(date.getMinutes());
         const second = autoSupplement(date.getSeconds());
 
-        return `${year}.${month}.${day} ${hour}:${minute}:${second}`;
+        return [`${year}.${month}.${day} ${hour}:${minute}:`, `${second}`];
       };
       const getTopTime = (date) => {
         const hour = autoSupplement(date.getHours());
@@ -73,14 +88,18 @@
       };
       function init() {
         const date = new Date();
-        midTime.innerHTML = getTime(date);
+        const time = getTime(date);
+        midTime.innerHTML = time[0];
+        midSeconds.innerHTML = time[1];
         topTime.innerHTML = getTopTime(date);
       }
       init();
 
       setInterval(() => {
         const date = new Date();
-        midTime.innerHTML = getTime(date);
+        const time = getTime(date);
+        midTime.innerHTML = time[0];
+        midSeconds.innerHTML = time[1];
       }, 1000);
 
       setInterval(() => {
