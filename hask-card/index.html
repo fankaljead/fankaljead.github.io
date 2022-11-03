@@ -8,6 +8,7 @@
     <style>
       body {
         font-family: "我想做你女朋友";
+        margin: 0;
       }
       img {
         height: 100%;
@@ -54,7 +55,7 @@
     <div class="box">
       <div class="head-time">11:32</div>
 
-      <img src="https://fankaljead.github.io/hask-card/img/1.png" alt=""  />
+      <img src="https://fankaljead.github.io/hask-card/img/1.png" alt="" />
       <div class="mid-time-container">
         <div class="mid-time"></div>
         <div class="mid-seconds"></div>
@@ -111,6 +112,24 @@
       maskButton.addEventListener("click", (e) => {
         location.href = "https://fankaljead.github.io/hask-card/2.html";
       });
+
+      function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+
+      document.addEventListener(
+        "dblclick",
+        function (e) {
+          toggleFullScreen();
+        },
+        false
+      );
     </script>
   </body>
 </html>
